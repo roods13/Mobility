@@ -1,7 +1,7 @@
 /*
 Theme Name: japan-style
 Description: japan-style Wordpress Theme by<a href="http://blog.gooddesignweb.com/">Good Design Web</a>
-Version: 1.1
+Version: 1.2
 Author: Good Design Web
 Author URI: http://blog.gooddesignweb.com/
 Tags: fixed width, two columns, right sidebar, valid XHTML, valid CSS
@@ -19,10 +19,15 @@ img { border: none; }
 /* Body
 -------------------------------------------------------------------*/
 body { 
-	font: 12px/18px Verdana, Helvetica, Arial, Geneva, sans-serif; 
+        margin: 0 auto;
+        font: 12px/18px Verdana, Helvetica, Arial, Geneva, sans-serif; 
 	color: #333; 
-	background: #DED5BA; 
+	background: #DED5BA url(images/bg.jpg) no-repeat center top; 
 }
+
+*:first-child+html body {background: #DED5BA url(images/bg.jpg) no-repeat center -8px;}
+
+* html body {background: #DED5BA url(images/bg.jpg) no-repeat center -8px;}
 
 h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", Helvetica, Arial, Geneva, Sans-Serif; color: #414d4c; }
 h1 { font-size: 22px; line-height: 26px; margin-bottom: 10px; }
